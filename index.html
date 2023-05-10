@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Billar Carambola</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Billar Carambola</h1>
+    <label for="playerBallPosX">Posición X de la bola del jugador:</label>
+    <input type="number" id="playerBallPosX" name="playerBallPosX" />
+    <label for="playerBallPosY">Posición Y de la bola del jugador:</label>
+    <input type="number" id="playerBallPosY" name="playerBallPosY" />
+    <label for="targetBall1PosX">Posición X de la primera bola objetivo:</label>
+    <input type="number" id="targetBall1PosX" name="targetBall1PosX" />
+    <label for="targetBall1PosY">Posición Y de la primera bola objetivo:</label>
+    <input type="number" id="targetBall1PosY" name="targetBall1PosY" />
+    <label for="targetBall2PosX">Posición X de la segunda bola objetivo:</label>
+    <input type="number" id="targetBall2PosX" name="targetBall2PosX" />
+    <label for="targetBall2PosY">Posición Y de la segunda bola objetivo:</label>
+    <input type="number" id="targetBall2PosY" name="targetBall2PosY" />
+    <label for="speed">Velocidad inicial:</label>
+    <input type="number" id="speed" name="speed" />
+    <label for="angle">Angulo de tiro:</label>
+    <input type="number" id="angle" name="angle" />
+    <button onclick="calculateCarambola()">Posicionar</button>
+    <button onclick="play()">Tirar</button>
+    <p id="result"></p>
+    <canvas id="myCanvas" width="800" height="300"></canvas>
+    <script src="billar.js"></script>
+  </body>
+</html>
